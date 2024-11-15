@@ -10,23 +10,20 @@ body {
     background-color: white;
 }
 
-section, footer {
-    /* padding: 54px; */
-}
 
 /* Menu */
 
 .container {
     max-width: 2000px;
     margin: 0%;
-    padding: 1% 2% 1% 3%;
+    padding: 1% 2% 1% 7%;
     background-color: rgba(0, 0, 0, 0.871);
     /* width: 50%; */
 }
 
 nav {
-    /* display: flex; */ */
-    justify-content: space-between;
+    /* display: flex; */
+    justify-content:space-between;
     align-items: center;
     position: fixed;
 }
@@ -79,7 +76,7 @@ section .home {
     background-size: cover;
 }
 
-h1 {
+.titulo-sobre {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2.5em;
     white-space: nowrap;
@@ -92,7 +89,7 @@ h2 {
     white-space: nowrap;
     color: white;
 }
-span {
+.span-1 {
     background-color: hsl(15, 100%, 50%);
     box-sizing: border-box;
     font-size: 1em;
@@ -163,9 +160,6 @@ div .btn-home {
         padding: 8px 40px; /* Reduz o padding */
     }
 
-    h1 {
-        font-size: 2.5em; /* Diminui o tamanho do título */
-    }
 }
 
 @media (max-width: 768px) {
@@ -180,10 +174,6 @@ div .btn-home {
         gap: 15px; /* Espaço entre os links */
     }
 
-    h1 {
-        font-size: 2em; /* Reduz o tamanho do título */
-    }
-
     .btn {
         padding: 8px 30px; /* Ajusta o padding do botão */
     }
@@ -195,7 +185,7 @@ div .btn-home {
         margin: 0 10px; /* Reduz o espaço entre links */
     }
 
-    h1 {
+    .titulo-sobre {
         font-size: 1.5em; /* Reduz o tamanho do título */
         white-space: normal; /* Permite quebra de linha no título */
     }
@@ -213,17 +203,137 @@ div .btn-home {
 /* Responsividade */
 /* end section one */
 
-/* end section two */
+/* section two */
 
 .trabalhos{
     width: auto;
     height: 453px;
 }
 .titulo h1{
-    color: hsl(15, 100%, 50%);
-    padding: 7% 0 0 7%;
+    color: rgb(255, 55, 0);
+    padding: 5% 0 3% 0;
     font-size: 3em;
     text-transform: uppercase;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+} 
+
+.capa-servicos{
+    display: flex;
+    padding: 3% 0% 5% 7%;
+    justify-content: center;
+    align-items: center;
 }
+.foto-capa img{
+    border: 5px solid #ccc;
+    padding: 5px;
+    border-radius: 20px;
+    width: 400px;
+    height: auto;
+}
+div .texto-capa{
+    margin-left: 4%;
+    box-sizing: border-box;
+    max-width: 500px;
+}
+.fundo-branco{
+    font-size: 2em; /* Tamanho da fonte */
+    color: #2e2e2d;;
+    font-family: 'Filson Font', sans-serif;
+    font-weight: bolder;
+    padding-bottom: 5%;
+}
+p{
+    font-family:  Muli, sans-serif;
+    color: #2e2e2d;
+    font-size: 20px;
+    display: block;
+    height: auto;
+    margin: 0 0 10px;
+    font-weight: 200;
+}
+
+.cards{
+    display: flex; /* Para layouts em grid */
+    background-color: hsl(0, 0%, 90%);
+    width: auto;
+    height: auto;
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.cards-1{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 200px;
+    height: 300px;
+    margin: 3% 3%;
+    padding: 20px;
+}
+.foto-card-1 img{
+    justify-content: center; /* Centraliza horizontalmente */
+    border-radius: 20px; /* Bordas arredondadas */
+    align-items: center; /* Centraliza verticalmente */
+    width: 80px;
+    height: auto;  
+    display: block;
+    margin: 0 auto;
+}
+.fundo-branco-cards{
+    font-size: 1.5em; 
+    color: rgb(255, 55, 0);
+    font-family: Muli, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 6% 0;
+}
+.p-cards{
+    color: #2e2e2d;
+    text-align: center;
+    font-size: 1em;
+    font-family: Muli, sans-serif;
+}
+
 /* end section two */
+
+span {
+    background-color: hsl(15, 100%, 50%);
+    box-sizing: border-box;
+    color: white;
+    font-size: 1em;
+    padding: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4{
+    color: black;
+    padding: 5% 0 3% 0;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 10%;
+}
+.titulo2 {
+    margin-left:16%;
+}
+
+.capa-sobre{
+    display: flex; /* Define o layout flexível */
+    align-items: flex-start; /* Alinha os elementos no topo */
+    gap: 40px; /* Espaço entre a imagem e o texto */
+    align-items: center;
+    padding: 6% 20% 5% 0%;
+}
+
+.foto-sobre img{
+    border: 5px solid #ccc;
+    padding: 5px;
+    border-radius: 20px;
+    width: 500px;
+    height: auto;
+    margin-left: 4%;
+}
+.texto-sobre{
+    box-sizing: border-box;
+    max-width: 500px;
+    text-align: end;
+}
